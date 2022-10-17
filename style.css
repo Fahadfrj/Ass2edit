@@ -1,0 +1,203 @@
+/* removed font line from all ps because the font will by default be Times New Roman. Changed Georgia font to sans-serif because Georgia is a serif font, meaning it will have the fancy points we dont want on img text and sidebar2. Inserted texted and spaced it appropriately, changed background colour to a colder tone as the paper is old and kind of reddish rather than an aliceblue cold shade. Moved background colour command out of the page1 and page2 divs to just cover the page as a whole for a more seamless look. Removed border just to show you this as an alternative (I think it looks more like a newspaper that way) but feel free to add it back if you liked it better (copy paste from older version of the file). Added a larger margin between page footer and second page to make up for the lack of a border divide. Added margin to top of first page since the news paper has empty space at the top as well. Changed size of image 1 page 2 to better resebmle the original article.  - Leila*/
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background-color: rgb(244, 243, 242);
+}
+.page1{
+    margin: 15px;
+    margin-top:5em;
+    border-radius: 10px;
+
+}
+.first-page{
+    border-left:6px solid black;
+    border-right: 2px dashed black;
+    margin: 10px 6%;
+    margin: 0 10%;
+    
+}
+.header-first-page{
+    padding:10px 14%;
+}
+.header-first-page div {
+    padding: 5px;
+}
+.title-page1{
+    display: inline;
+    background-color: red;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.7rem;
+    padding: 3px 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.title2-page1{
+    letter-spacing: 1rem;
+    font: small-caps bold 15px/1 sans-serif;
+}
+.header-first-page div h1{
+    text-transform:capitalize ;
+    font-size: 3em;
+    font-family: Lucida Sans Unicode;
+}
+.photo{
+    height: 60%;
+    background-image: url(https://images.unsplash.com/photo-1665430922646-5f4fecfc02bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+    margin-right: 10px;;
+    position: relative;
+}
+.text-photo{
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    text-align: right;
+    width: 10%;
+    padding: 5px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: small;
+}
+.under-photo{
+    display: flex;
+    padding: 3px;
+}
+.sidebar-page1{
+    width: 14%;
+    padding: 5px;
+}
+.sidebar-page1 p {
+    font-family: "Times New Roman", serif;
+    font-style:oblique;
+    margin-left:10px;
+    font-size: 17px;
+    line-height: 2;
+    text-align: right;
+}
+.leftside-article-pag1{
+    width: 40%;
+    border-right: 2px dashed black;
+    border-left: 2px dashed black;
+    padding: 10px;
+    line-height: 1.5;
+}
+.drop-cap::first-letter {
+    float: left;
+    font-size: 9em;
+    line-height: 0.5em;
+    padding-bottom: 10px;
+    padding-top:20px;
+    padding-right: 10px;
+    color:rgb(43, 102, 154);
+    font-family: sans-serif;
+  }
+.rightside-article-pag1{
+    width: 40%;
+    padding: 10px;
+    line-height: 1.5;
+}
+.page1-date{
+    margin-left: 9%;
+    margin-right: 8%;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.page1-date p {
+    letter-spacing: 0.4em;
+    font-size: 0.8em;
+}
+.page2{
+    margin: 15px;
+    border-radius: 10px;
+}
+.second-page{
+    display: flex;
+    border-right:6px solid black;
+    margin: 10px 6%;
+    margin: 0 10%;
+}
+
+.leftside-page2{
+    width: 42%;
+    border-right: 2px dashed black;
+    border-left: 2px dashed black;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.page2-date{
+    margin-left: 7%;
+    margin-right: 8%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.page2-date p{
+    letter-spacing: 0.4em;
+    font-size: 0.8em;
+    padding: 5px;
+
+}
+.rightside-page2{
+    width: 56%;
+}
+.rightside-article-over-photo{
+    display: flex;
+}
+.article-over-photo{
+    padding:6px;
+    border-right: 2px dashed black;
+    width: 80%;
+    line-height: 1.5;
+}
+.sidebar-over-photo{
+    width: 25%;
+    padding: 5px;
+}
+.sidebar-over-photo p{
+    font-style: italic;
+    font-size: 17px;
+    line-height: 2;
+    text-align: left;
+    margin: 10px;
+}
+.photo-page2{
+    height: 25%;
+    background-image: url(https://images.unsplash.com/photo-1590390179648-79c7d8798ca9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80);
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.rightside-article-under-photo {
+    display: flex;
+}
+.article-under-photo{
+    padding:6px;
+    border-right: 2px dashed black;
+    width: 80%;
+}
+.article-under-photo p {
+    line-height: 1.5;
+}
+.sidebar-under-photo{
+    width: 25%;
+    padding: 5px;
+}
+.sidebar-under-photo p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin:  10px;
+}
+.right-bottom{
+    text-transform: uppercase;
+}
